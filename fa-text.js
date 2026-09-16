@@ -45,7 +45,7 @@ export function faFold(input) {
 // Use only as a fallback when the first search comes back empty.
 export function faSearchVariants(input) {
   const folded = faFold(input);
-  const spaced = folded.replace(/[‌‍]/g, " ").replace(/\s+/g, " ").trim();
+  const spaced = folded.replace(/[\u200C\u200D]/g, " ").replace(/\s+/g, " ").trim();
   const out = [spaced];
   if (spaced.includes(" ")) {
     out.push(spaced.replace(/ /g, ZWNJ));
