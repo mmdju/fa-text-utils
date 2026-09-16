@@ -43,6 +43,10 @@ Fold first, then expand spaces into ZWNJ and joined forms. Use only as a **fallb
 - Never strip ZWNJ in `faFold` - expand it in `faSearchVariants` instead.
 - Digits fold to ASCII: compare and sort on the folded form.
 
+## Used in
+
+Powers the Persian search of [digikala-mcp](https://github.com/mmdju/digikala-mcp) - the same folding behind `digikala_suggest` and every product search there.
+
 ## Test
 
 ```bash
