@@ -1,0 +1,30 @@
+{
+  "name": "fa-text-utils",
+  "version": "1.0.0",
+  "description": "Tiny Persian text helpers for search: yeh/kaf folding, Persian digits, ZWNJ variants. Zero dependencies.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./fa-text.js",
+  "types": "./fa-text.d.ts",
+  "exports": {
+    ".": {
+      "types": "./fa-text.d.ts",
+      "import": "./fa-text.js",
+      "default": "./fa-text.js"
+    }
+  },
+  "files": [
+    "fa-text.js",
+    "fa-text.d.ts"
+  ],
+  "scripts": {
+    "test": "node --test test.mjs"
+  },
+  "keywords": [
+    "persian",
+    "farsi",
+    "search",
+    "normalization",
+    "zwnj"
+  ]
+}

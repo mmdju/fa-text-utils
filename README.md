@@ -6,10 +6,10 @@ Iranian keyboards produce two spellings of the same word: Arabic yeh/kaf (ي ك)
 
 ## Install
 
-Copy `fa-text.js` into your project. No build step, no dependencies.
+Install it as a dependency (`npm install github:mmdju/fa-text-utils`) so the folding lives in one place, or copy `fa-text.js` into your project if you would rather vendor it. No build step and no runtime dependency either way.
 
 ```js
-import { faFold, faSearchVariants } from "./fa-text.js";
+import { faFold, faSearchVariants } from "fa-text-utils";
 ```
 
 ## `faFold(text)`
@@ -45,7 +45,7 @@ Fold first, then expand spaces into ZWNJ and joined forms. Use only as a **fallb
 
 ## Used in
 
-Powers the Persian search of [digikala-mcp](https://github.com/mmdju/digikala-mcp) - the same folding behind `digikala_suggest` and every product search there.
+Powers the Persian search of [digikala-mcp](https://github.com/mmdju/digikala-mcp) and [divar-mcp](https://github.com/mmdju/divar-mcp) - both import the same folding from here instead of copying it, so the two can no longer drift apart.
 
 ## Test
 
